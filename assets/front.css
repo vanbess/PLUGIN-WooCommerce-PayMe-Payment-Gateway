@@ -1,0 +1,70 @@
+/* styles used on order confirmation page */
+div#sb_pm_qr_div {
+    padding: 15px;
+    border: 1px dashed #ddd;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px #ddd;
+    overflow: auto;
+    text-align: center;
+}
+
+img#sb_pm_qr_img {
+    max-width: 250px;
+}
+
+span#sb_pm_qr_instructions {
+    display: block;
+    padding-top: 15px;
+    margin-bottom: 40px;
+    width: 90%;
+    position: relative;
+    left: 48px;
+}
+
+button#sb_pm_submit_link, button#sb_pm_aj_send {
+    display: block;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #da0310;
+    color: white;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 4px #ddd;
+}
+
+input#sb_pm_link {
+    width: 73%;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+/* responsive styles */
+@media screen and (max-width:800px){
+    input#sb_pm_link, button#sb_pm_submit_link, button#sb_pm_aj_send {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width:600px){
+    img#sb_pm_qr_img {
+        max-width: 82%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+
+    input#sb_pm_link, button#sb_pm_submit_link, button#sb_pm_aj_send {
+        width: 94%;
+    }
+
+    span#sb_pm_qr_instructions{
+        clear: both;
+        position: initial;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
